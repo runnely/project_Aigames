@@ -249,9 +249,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   line: {fileID: 616732504}
   patrol: {fileID: 1639784476}
-  speed: 20
+  speed: 5
   playerFinded: 0
-  player: {fileID: 586001823}
+  player: {fileID: 0}
 --- !u!120 &616732504 stripped
 LineRenderer:
   m_CorrespondingSourceObject: {fileID: 120701563229663234, guid: 159b7be9a6da9d441997d0d2aad1d8d2, type: 3}
@@ -557,10 +557,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 33322597139645110, guid: 9d353fbff4df3de4eb4aca284c5b331c, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 114091249842508514, guid: 9d353fbff4df3de4eb4aca284c5b331c, type: 3}
       propertyPath: _properties
       value: 
-      objectReference: {fileID: 11400000, guid: 8fa1a3f36725e67408e715f795857fcc, type: 2}
+      objectReference: {fileID: 11400000, guid: 94b1c44bfef889c4985ca714bf5d5f61, type: 2}
+    - target: {fileID: 114091249842508514, guid: 9d353fbff4df3de4eb4aca284c5b331c, type: 3}
+      propertyPath: _velocityObstacle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114571636359384086, guid: 9d353fbff4df3de4eb4aca284c5b331c, type: 3}
       propertyPath: targetPosition.y
       value: -5.142994
@@ -580,6 +588,56 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 586001824}
   m_SourcePrefab: {fileID: 100100000, guid: 9d353fbff4df3de4eb4aca284c5b331c, type: 3}
+--- !u!1 &1495490601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1495490603}
+  - component: {fileID: 1495490602}
+  m_Layer: 0
+  m_Name: OrderNavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1495490602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495490601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689a8f9e82f0749479fb0fd386958d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeX: 15
+  rangeZ: 15
+  targetProperties: {fileID: 11400000, guid: 94b1c44bfef889c4985ca714bf5d5f61, type: 2}
+  beforeQueueNavmesh:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1495490603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495490601}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3467622, y: 0.00000048680903, z: -4.0836506}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639784475
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,3 +700,4 @@ SceneRoots:
   - {fileID: 1145172980}
   - {fileID: 31435630}
   - {fileID: 1639784477}
+  - {fileID: 1495490603}
