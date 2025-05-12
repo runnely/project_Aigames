@@ -407,6 +407,14 @@ PrefabInstance:
       propertyPath: patrol
       value: 
       objectReference: {fileID: 1132144171}
+    - target: {fileID: 190288280711608298, guid: 59a2fb3cdcc0cd447af9ec85615603f8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 190288280711608298, guid: 59a2fb3cdcc0cd447af9ec85615603f8, type: 3}
+      propertyPath: playerFinded
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2356683742400409595, guid: 59a2fb3cdcc0cd447af9ec85615603f8, type: 3}
       propertyPath: m_Enabled
       value: 0

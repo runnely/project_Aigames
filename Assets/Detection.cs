@@ -9,16 +9,6 @@ public class Detection : MonoBehaviour
 
     public bool playerFinded = false; 
     public Transform player; 
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-  
-    }
     
     
     // void OnCollisionEnter(Collision collision)
