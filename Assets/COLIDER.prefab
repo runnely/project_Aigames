@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3104916161306097710}
   - component: {fileID: 3104916161306097697}
   - component: {fileID: 3104916161306097709}
-  - component: {fileID: 4898960652802536230}
+  - component: {fileID: 8425033524613478525}
   m_Layer: 0
   m_Name: COLIDER
   m_TagString: Untagged
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &4898960652802536230
+--- !u!114 &8425033524613478525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
